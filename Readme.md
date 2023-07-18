@@ -1,3 +1,12 @@
+# CICD-infrastructure
+
+
+install pipeline reqirments 
+`$ ./install.sh`
+
+
+tasks list 
+```yaml
 tasks:
   Requirments:
     git_hub_repos:
@@ -55,5 +64,5 @@ tasks:
         descption: Push Buildah image to nexus
       - name: Config_generate
         descption: Deployment config generate 
-
+```
         
