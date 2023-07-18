@@ -1,0 +1,19 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: git-pull-pipeline
+spec:
+  tasks:
+    - name: git-pull-task
+      taskRef:
+        name: git-pull
+      params:
+        - name: url
+          value: https://github.com/EAS-Clark/Helloworld-Go.git # Replace with your Git repository URL
+        - name: revision
+          value: main # Replace with the desired Git revision (commit hash, branch, or tag)
+
+    # - name: buildah
+
+
+

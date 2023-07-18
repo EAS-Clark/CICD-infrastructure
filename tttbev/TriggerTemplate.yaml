@@ -1,0 +1,20 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerTemplate
+metadata:
+  name: git-trigger-template
+spec:
+  params:
+    - name: git-repo-url
+      description: The URL of the Git repository
+    - name: git-revision
+      description: The Git revision (commit hash, branch, or tag)
+
+  tasks:
+    - name: git-pull-task
+      taskRef:
+        name: git-pull
+      params:
+        - name: url
+          value: $(params.git-repo-url)
+        - name: revision
+          value: $(params.git-revision)

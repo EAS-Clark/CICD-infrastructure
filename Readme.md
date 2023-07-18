@@ -4,6 +4,10 @@
 install pipeline reqirments 
 `$ ./install.sh`
 
+<!--       _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~-->
 
 tasks list 
 ```yaml

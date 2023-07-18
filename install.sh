@@ -18,6 +18,11 @@ helm install vault hashicorp/vault
 helm repo add argo https://argoproj.github.io/argo-helm
 helm install my-release argo/argocd-apps
 
+
+# add wait here 
+echo "sleep for 10 sec "
+sleep 10
+
 # add trivy-scanner
 kubectl apply -f install/task/trivy-scanner.yaml
 
