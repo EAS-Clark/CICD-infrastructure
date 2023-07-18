@@ -1,6 +1,6 @@
 
 # install tekton
-kubectl apply --filename task/tekton.yaml
+kubectl apply -f task/tekton.yaml
 
 # install nexus3
 helm repo add stevehipwell https://stevehipwell.github.io/helm-charts/
