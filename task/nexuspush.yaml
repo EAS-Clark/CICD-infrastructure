@@ -1,0 +1,16 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: neus-push
+spec:
+  params:
+    - name: url
+      type: string
+    - name: revision
+      type: string
+  steps:
+    - name: git-clone
+      image: alpine/git
+      script: |
+        scan scan 
+    # You can add additional steps to build, test, or deploy the code as needed.
